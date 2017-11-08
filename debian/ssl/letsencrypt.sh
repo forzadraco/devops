@@ -1,6 +1,8 @@
 #bin/bash
 
-sudo add-apt-repository ppa:certbot/certbot
+#yes '' | command
+
+sudo add-apt-repository ppa:certbot/certbot -y
 sudo apt-get update
 sudo apt-get install python-certbot-nginx -y
 
