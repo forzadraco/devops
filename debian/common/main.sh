@@ -7,3 +7,5 @@ sudo apt-get install -y language-pack-en-base
 
 #git
 sudo add-apt-repository ppa:git-core/ppa
+
+sudo apt update
