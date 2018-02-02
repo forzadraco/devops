@@ -6,5 +6,10 @@
 ```
 2. Add Docker Repo 
 ```
-# yum-config-manager --add-repo https://donwload.docker.com/linux/dentos/docker-ce.repo
+# yum-config-manager --add-repo https://download.docker.com/linux/dentos/docker-ce.repo
+```
+
+3. Install Docker
+```
+# yum install docker-ce
 ```
