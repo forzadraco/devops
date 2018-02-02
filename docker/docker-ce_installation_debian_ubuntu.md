@@ -1,6 +1,8 @@
 # Step By Step Docker Installation on Debian/Ubuntu
 
-1. Install dependencies
+Official Docs : https://docs.docker.com/install/linux/docker-ce/ubuntu/ 
+
+1. Install dependencies and packages to allow apt to use a repository over HTTPS:
 ```
 # apt install apt-transport-https ca-certificates curl software-properties-common
 ```
@@ -8,14 +10,17 @@
 ```
 # curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
-3. Add Repo
+3. Add Docker's official Repo
 ```
-# sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable
+# sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
 # apt update
 ```
 4. Install Docker
 ```
-#apt install docker-ce
+# sys
 ```
 5. enable, start and see docker status
 ```
