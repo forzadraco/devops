@@ -13,3 +13,16 @@
 ```
 # yum install docker-ce
 ```
+
+4. enable, start and see docker status
+```
+# systemctl enable docker && systemctl start docker && systemctl status docker
+```
+
+As default the docker installation only can be run by root or user with docker group
+
+5. (Optional) add user to group
+```
+# usermod -aG docker user
+```
+
