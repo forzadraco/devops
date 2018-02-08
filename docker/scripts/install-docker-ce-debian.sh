@@ -12,3 +12,4 @@ sudo add-apt-repository \
    stable"
 sudo apt-get update
 sudo apt-get install -y docker-ce
+sudo systemctl enable docker && sudo systemctl start docker && sudo systemctl status docker
